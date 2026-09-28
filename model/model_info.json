@@ -1,0 +1,51 @@
+{
+  "model_name": "mobilenetv3_large_100",
+  "classes": [
+    "fresh",
+    "rotten"
+  ],
+  "img_size": 224,
+  "resize": 256,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "t_fresh": 0.5,
+  "t_rotten": 0.5,
+  "target_rotten_recall": 0.98,
+  "test_metrics": {
+    "all": {
+      "n": 775,
+      "accuracy_at_0_5": 0.9896774193548387,
+      "rotten_called_fresh": 8,
+      "fresh_called_rotten": 0,
+      "unsure": 0
+    },
+    "kaggle": {
+      "n": 164,
+      "accuracy_at_0_5": 0.9939024390243902,
+      "rotten_called_fresh": 1,
+      "fresh_called_rotten": 0,
+      "unsure": 0
+    },
+    "own": {
+      "n": 611,
+      "accuracy_at_0_5": 0.9885433715220949,
+      "rotten_called_fresh": 7,
+      "fresh_called_rotten": 0,
+      "unsure": 0
+    }
+  },
+  "trained_on": {
+    "own/fresh": 1204,
+    "own/rotten": 1652,
+    "kaggle/fresh": 263,
+    "kaggle/rotten": 399
+  }
+}
